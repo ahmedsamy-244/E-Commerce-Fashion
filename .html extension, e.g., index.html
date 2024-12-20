@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 15px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .product p {
+            color: #555;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dress Shop</h1>
+        <p>Your one-stop shop for trendy dresses!</p>
+    </header>
+    <div class="container">
+        <div class="products-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Dress 1">
+                <h2>Elegant Evening Dress</h2>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Dress 2">
+                <h2>Casual Summer Dress</h2>
+                <p>$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Dress 3">
+                <h2>Stylish Party Dress</h2>
+                <p>$79.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Dress 4">
+                <h2>Classic Formal Dress</h2>
+                <p>$119.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
